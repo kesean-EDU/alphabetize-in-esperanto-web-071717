@@ -1,3 +1,4 @@
+ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
-  # code here
+  arr.sort_by { |word| word.split("").collect { |letter| ALPHABET.index(letter) } }
 end
